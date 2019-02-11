@@ -47,9 +47,9 @@ class Recorder:
                     while self.message_queue.empty():
                         #print("queue empty")
                         file.write(self.q.get())
-                    print("got something in the queue")
+                    #print("got something in the queue")
                     input_stream.stop()
-                    print("streamed supposed to be stopped now")
+                    #print("streamed supposed to be stopped now")
 
         def recording_callback(self, indata, frames, time, status):
             #print("got something! frames: {} time: {}, status: {}".format(frames, time, status))
