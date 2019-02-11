@@ -29,7 +29,7 @@ class Recorder:
 
 
     class RecorderThread(threading.Thread):
-        def __init__(self, message_queue, sample_rate=44100, channels=2, q=queue.Queue(), outfile = "out.wav", ):
+        def __init__(self, message_queue, sample_rate=44100, channels=1, q=queue.Queue(), outfile = "out.wav", ):
             threading.Thread.__init__(self)
             self.sample_rate = sample_rate
             self.channels = channels

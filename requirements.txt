@@ -1,4 +1,2 @@
 sounddevice
 soundfile
-queue
-threading
